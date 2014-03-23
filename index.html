@@ -1,0 +1,68 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Workflow DvDeveloper</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+	<script src="lib/jsBezier-0.6.js"></script>     
+    <script src="lib/jsplumb-geom-0.1.js"></script>
+	<script src="src/util.js"></script>
+	<script src="src/dom-adapter.js"></script>        
+	<script src="src/jsPlumb.js"></script>
+	<script src="src/endpoint.js"></script>                
+	<script src="src/connection.js"></script>
+	<script src="src/anchors.js"></script>        
+	<script src="src/defaults.js"></script>
+    <script src="src/connectors-bezier.js"></script>
+	<script src="src/connectors-statemachine.js"></script>
+	<script src="src/connectors-flowchart.js"></script>
+    <script src="src/connector-editors.js"></script>
+	<script src="src/renderers-svg.js"></script>
+	<script src="src/renderers-canvas.js"></script>
+	<script src="src/renderers-vml.js"></script>
+	<script src="src/jquery.jsPlumb.js"></script>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript" src="js/menu/jquery.contextMenu.js"></script>
+	<script type="text/javascript" src="js/menu/jquery.ui.position.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/menu/jquery.contextMenu.css">
+
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row clearfix top-header">
+		<div class="col-md-12 column">
+			<h1>Dv Developer</h1><span>Por <a href="#"> diego valladares </a> Proyecto en <a href="#">Github</a></span>
+			<h3 class="text-center">
+				Demo Workflow editor + bootstrap + jsPlumb + JQuery ContentMenu
+			</h3>
+		</div>
+	</div>
+	<div class="row border-editor content-editor">
+		<div class="col-md-2 column heigh-editor border-right-editor">
+			 <span class="label label-info top-label">Herramientas</span>
+			 <ul class="tool-panel" id="sortable-element">
+			 	<li attr-type="actor"> <img src="images/persona.png"> Actor</li>
+			 	<li attr-type="caso_uso"> <img src="images/diagrama.png"> Caso de uso</li>
+			 </ul>
+		</div>
+		<div class="col-md-10 column heigh-editor">
+			 <span class="label label-danger top-label">Editor</span>
+			 <div class="css-editor" id="editor"> </div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
